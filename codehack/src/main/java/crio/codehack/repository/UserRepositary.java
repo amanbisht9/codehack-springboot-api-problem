@@ -15,6 +15,4 @@ public interface UserRepositary extends MongoRepository<User,String> {
     @SuppressWarnings("null")
     List<User> findAll();
 
-    boolean deleteByUserId(String userId);
-
 }

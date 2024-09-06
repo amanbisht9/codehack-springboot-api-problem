@@ -15,6 +15,7 @@ public class User {
     private int score;
     private List<String> badges;
 
+
     public User() {
     }
 
@@ -23,6 +24,31 @@ public class User {
         this.userName = userName;
         this.score = 0;
         this.badges = new ArrayList<>();
+    }
+
+    public User(String userId, String userName, int score, List<String> badges) {
+        this.userId = userId;
+        this.userName = userName;
+        this.score = score;
+        this.badges = badges;
+    }
+
+
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public int getScore() {
@@ -39,11 +65,6 @@ public class User {
 
     public void setBadges(List<String> badges) {
         this.badges = badges;
-    }
-
-    @Override
-    public String toString() {
-        return "{userId : "+userId+", userName : " + userName + ", score : " + score + ", badges : " + badges + "}";
     }
 
 
