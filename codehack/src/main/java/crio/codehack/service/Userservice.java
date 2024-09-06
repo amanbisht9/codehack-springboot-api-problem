@@ -4,7 +4,6 @@ package crio.codehack.service;
 import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import crio.codehack.dto.Userdto;
